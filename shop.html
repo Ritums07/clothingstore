@@ -4,6 +4,14 @@
         <div style="background: grey; padding: 20px; border-radius: 15px;">
             <a style="text-decoration: none; margin-left: 25px; color: black;" href="">Caps</a>
             <br>
+            <br>
+            <input style="border-radius: 25px; border: none; padding: 10px;" type="submit" value="Red in store" id="cred">
+            <input style="border-radius: 25px; border: none; padding: 10px;" type="submit" value="Black in store" id="cblack">
+            <input style="border-radius: 25px; border: none; padding: 10px;" type="submit" value="Blue in store" id="cblue">
+            <input style="border-radius: 25px; border: none; padding: 10px;" type="submit" value="Light blue in store" id="clightblue">
+            <input style="border-radius: 25px; border: none; padding: 10px;" type="submit" value="White in store" id="cwhite">
+            <p style="font-size: 15px; color: red;" id="clager"></p>
+            <br>
             <img src="https://img.game8.jp/1652504/4576c2eded0c753b47e5f8d4163eeb8e.png/show?1527556516" alt="">
         </div>
         <br>
@@ -11,6 +19,14 @@
         <br>
         <div style="background: white; padding: 20px; border-radius: 15px;">
             <a style="text-decoration: none; margin-left: 25px; color: black;" href="">Shirts</a>
+            <br>
+            <br>
+            <input style="border-radius: 25px; border: none; padding: 10px;" type="submit" value="Red in store" id="sred">
+            <input style="border-radius: 25px; border: none; padding: 10px;" type="submit" value="Black in store" id="sblack">
+            <input style="border-radius: 25px; border: none; padding: 10px;" type="submit" value="Blue in store" id="sblue">
+            <input style="border-radius: 25px; border: none; padding: 10px;" type="submit" value="Light blue in store" id="slightblue">
+            <input style="border-radius: 25px; border: none; padding: 10px;" type="submit" value="White in store" id="swhite">
+            <p style="font-size: 15px; color: red;" id="slager"></p>
             <br>
             <img src="https://th.bing.com/th/id/OIP.ung9fLgqCmIR5eT_1Sb_fAAAAA?pid=ImgDet&w=128&h=128&rs=1" alt="">
         </div>
@@ -20,7 +36,15 @@
         <div style="background: grey; padding: 20px; border-radius: 15px;">
             <a style="text-decoration: none; margin-left: 25px; color: black;" href="">Pants</a>
             <br>
-            <img src="leatherpants.png" alt="">
+            <br>
+            <input style="border-radius: 25px; border: none; padding: 10px;" type="submit" value="Red in store" id="pred">
+            <input style="border-radius: 25px; border: none; padding: 10px;" type="submit" value="Black in store" id="pblack">
+            <input style="border-radius: 25px; border: none; padding: 10px;" type="submit" value="Blue in store" id="pblue">
+            <input style="border-radius: 25px; border: none; padding: 10px;" type="submit" value="Light blue in store" id="plightblue">
+            <input style="border-radius: 25px; border: none; padding: 10px;" type="submit" value="White in store" id="pwhite">
+            <p style="font-size: 15px; color: red;" id="plager"></p>
+            <br>
+            <img src="https://i.mcmod.cn/item/icon/128x128/1/11150.png" alt="">
         </div>
         <br>
         <hr>
@@ -28,7 +52,151 @@
         <div style="background: white; padding: 20px; border-radius: 15px;">
             <a style="text-decoration: none; margin-left: 25px; color: black;" href="">Shoes</a>
             <br>
+            <br>
+            <input style="border-radius: 25px; border: none; padding: 10px;" type="submit" value="Red in store" id="bred">
+            <input style="border-radius: 25px; border: none; padding: 10px;" type="submit" value="Black in store" id="bblack">
+            <input style="border-radius: 25px; border: none; padding: 10px;" type="submit" value="Blue in store" id="bblue">
+            <input style="border-radius: 25px; border: none; padding: 10px;" type="submit" value="Light blue in store" id="blightblue">
+            <input style="border-radius: 25px; border: none; padding: 10px;" type="submit" value="White in store" id="bwhite">
+            <p style="font-size: 15px; color: red;" id="blager"></p>
+            <br>
             <img style="height: 120px; width: 120px; padding-left: 10px;" src="https://gamepedia.cursecdn.com/minecraft_fr_gamepedia/4/4c/Ic%C3%B4neinv_Bottes_en_cuir.png?version=53c4c1b3306ed5b12b14595c4ef102f4" alt="">
         </div>
     </body>
+
+    <script>
+        var credlager = "There is 1 red cap in the store";
+        var cblacklager = "There is 1 black cap in the store";
+        var cbluelager = "There is 1 blue cap in the store";
+        var clbluelager = "There is 1 light blue cap in the store";
+        var cwhitelager = "There are 0 white caps in the store";
+
+
+        var btn = document.getElementById("cred");
+            btn.onclick = function(){
+                document.getElementById("clager").innerHTML = credlager;
+            }
+
+        var btn = document.getElementById("cblack");
+            btn.onclick = function(){
+                document.getElementById("clager").innerHTML = cblacklager;
+            }
+
+        var btn = document.getElementById("cblue");
+            btn.onclick = function(){
+                document.getElementById("clager").innerHTML = cbluelager;
+            }
+        var btn = document.getElementById("clightblue");
+            btn.onclick = function(){
+                document.getElementById("clager").innerHTML = clbluelager;
+            }
+
+        var btn = document.getElementById("cwhite");
+            btn.onclick = function(){
+                document.getElementById("clager").innerHTML = cwhitelager;
+            }
+
+        
+
+
+        var sredlager = "There is 1 red shirt in the store";
+        var sblacklager = "There is 1 black shirt in the store";
+        var sbluelager = "There is 1 blue shirt in the store";
+        var slbluelager = "There is 1 light blue shirt in the store";
+        var swhitelager = "There are 0 white shirt in the store";
+
+
+        var btn = document.getElementById("sred");
+            btn.onclick = function(){
+                document.getElementById("slager").innerHTML = sredlager;
+            }
+
+        var btn = document.getElementById("sblack");
+            btn.onclick = function(){
+                document.getElementById("slager").innerHTML = sblacklager;
+            }
+
+        var btn = document.getElementById("sblue");
+            btn.onclick = function(){
+                document.getElementById("slager").innerHTML = sbluelager;
+            }
+        var btn = document.getElementById("slightblue");
+            btn.onclick = function(){
+                document.getElementById("slager").innerHTML = slbluelager;
+            }
+
+        var btn = document.getElementById("swhite");
+            btn.onclick = function(){
+                document.getElementById("slager").innerHTML = swhitelager;
+            }
+
+
+
+           
+        var predlager = "There is 1 red pants in the store";
+        var pblacklager = "There is 1 black pants in the store";
+        var pbluelager = "There is 1 blue pants in the store";
+        var plbluelager = "There is 1 light blue pants in the store";
+        var pwhitelager = "There are 0 white pants in the store";
+
+
+        var btn = document.getElementById("pred");
+            btn.onclick = function(){
+                document.getElementById("plager").innerHTML = predlager;
+            }
+
+        var btn = document.getElementById("pblack");
+            btn.onclick = function(){
+                document.getElementById("plager").innerHTML = pblacklager;
+            }
+
+        var btn = document.getElementById("pblue");
+            btn.onclick = function(){
+                document.getElementById("plager").innerHTML = pbluelager;
+            }
+        var btn = document.getElementById("plightblue");
+            btn.onclick = function(){
+                document.getElementById("plager").innerHTML = plbluelager;
+            }
+
+        var btn = document.getElementById("pwhite");
+            btn.onclick = function(){
+                document.getElementById("plager").innerHTML = pwhitelager;
+            }
+
+
+
+
+        var bredlager = "There is 1 red shoes in the store";
+        var bblacklager = "There is 1 black shoes in the store";
+        var bbluelager = "There is 1 blue shoes in the store";
+        var blbluelager = "There is 1 light blue shoes in the store";
+        var bwhitelager = "There are 0 white shoes in the store";
+
+
+        var btn = document.getElementById("bred");
+            btn.onclick = function(){
+                document.getElementById("blager").innerHTML = bredlager;
+            }
+
+        var btn = document.getElementById("bblack");
+            btn.onclick = function(){
+                document.getElementById("blager").innerHTML = bblacklager;
+            }
+
+        var btn = document.getElementById("bblue");
+            btn.onclick = function(){
+                document.getElementById("blager").innerHTML = bbluelager;
+            }
+        var btn = document.getElementById("blightblue");
+            btn.onclick = function(){
+                document.getElementById("blager").innerHTML = blbluelager;
+            }
+
+        var btn = document.getElementById("bwhite");
+            btn.onclick = function(){
+                document.getElementById("blager").innerHTML = bwhitelager;
+            }
+    </script>
+
 </html>
